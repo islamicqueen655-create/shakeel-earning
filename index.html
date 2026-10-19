@@ -1,174 +1,146 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#071b15">
-<meta name="description" content="Earn with Shakeel - Online earning guides, platform reviews, free earning tips and scam awareness.">
-<title>Earn with Shakeel | Online Earning Guide</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071a14">
+<title>Earn with Shakeel — Rewards Demo</title>
 <style>
-:root{--bg:#071b15;--panel:#102920;--green:#16c784;--gold:#f5c76b;--white:#f4fff9;--muted:#b4c9bf}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.7}
-header{padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #244337}
-.logo{font-size:21px;font-weight:800;color:var(--gold)}
-nav{display:flex;flex-wrap:wrap;gap:14px}
-a{color:inherit;text-decoration:none}
-nav a{font-size:13px;color:var(--muted)}
-.hero{padding:70px 6% 55px;text-align:center;background:radial-gradient(ellipse at top,#174b36 0%,#071b15 68%)}
-.tag{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:2px}
-h1{font-size:clamp(35px,7vw,62px);line-height:1.13;margin:18px auto;max-width:800px}
-h1 span{color:var(--green)}
-.hero p{max-width:650px;margin:18px auto;color:var(--muted)}
-.buttons{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:25px}
-.btn{display:inline-block;padding:12px 20px;border-radius:9px;font-weight:bold;background:var(--green);color:#062016}
-.btn.secondary{background:transparent;color:var(--gold);border:1px solid var(--gold)}
-section{padding:45px 6%;max-width:1150px;margin:auto}
-.section-title{text-align:center;font-size:29px;margin:0 0 8px}
-.sub{text-align:center;color:var(--muted);margin:0 auto 28px;max-width:650px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}
-.card{padding:23px;background:var(--panel);border:1px solid #254739;border-radius:15px}
-.card .icon{font-size:29px}
-.card h3{margin:10px 0;color:var(--gold)}
-.card p{color:var(--muted);font-size:14px}
-.checker{background:linear-gradient(135deg,#123b2b,#10251e);border:1px solid #37654d;border-radius:18px;padding:28px;text-align:center}
-input{width:100%;max-width:520px;padding:14px;border-radius:9px;border:1px solid #527464;background:#071b15;color:white;font-size:15px;margin:12px 0}
-.notice{color:var(--gold);font-size:13px}
-.whatsapp{background:#0d3022;border:1px solid #1b8f5b;border-radius:17px;padding:28px;text-align:center}
-footer{padding:28px 6%;text-align:center;border-top:1px solid #244337;color:var(--muted);font-size:13px}
-footer a{color:var(--gold)}
-@media(max-width:600px){header{align-items:flex-start;flex-direction:column}.hero{padding-top:48px}section{padding-top:35px;padding-bottom:35px}}
+:root{--bg:#071a14;--panel:#102820;--panel2:#14372a;--line:#285240;--green:#20d18a;--gold:#f2c66d;--text:#f4fff9;--muted:#b5c9bf;--red:#ff7777;--blue:#8ac9ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#123c2a 0,#071a14 48%);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}button,input,select{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.top{position:sticky;top:0;z-index:5;background:#071a14ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:12px 4%;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{font-weight:900;color:var(--gold);font-size:18px;white-space:nowrap}.brand span{color:var(--green)}.top-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.wrap{width:min(1120px,92%);margin:auto}.hero{padding:42px 0 24px}.eyebrow{color:var(--gold);font-size:11px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(30px,6vw,52px);line-height:1.08;margin:10px 0}.hero h1 span{color:var(--green)}.muted{color:var(--muted)}.small{font-size:12px}.notice{border:1px solid #81652f;background:#2a2414;color:#ffe6aa;border-radius:12px;padding:12px 14px;font-size:12px;margin:18px 0}.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:14px}.card{grid-column:span 4;background:linear-gradient(150deg,#14372a,#0d241b);border:1px solid var(--line);border-radius:17px;padding:18px;min-width:0;box-shadow:0 12px 30px #00000012}.card.wide{grid-column:span 8}.card.full{grid-column:1/-1}.card h2,.card h3{margin:4px 0 8px}.metric{font-size:29px;font-weight:900;color:var(--gold);line-height:1.2}.icon{font-size:25px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--green);color:#062016;border:0;border-radius:10px;padding:11px 15px;font-weight:850;min-height:42px}.btn:hover{filter:brightness(1.06)}.btn.secondary{background:#193c2d;color:var(--text);border:1px solid #3d6b53}.btn.gold{background:var(--gold);color:#201700}.btn.danger{background:#4a2020;color:#ffe1e1;border:1px solid #864141}.btn:disabled{opacity:.45;cursor:not-allowed}.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}.nav{display:flex;gap:7px;overflow-x:auto;padding:15px 0 8px;scrollbar-width:thin}.nav button{white-space:nowrap;border:1px solid var(--line);border-radius:999px;background:#102820;color:var(--muted);padding:9px 13px;font-size:13px}.nav button.active{background:var(--green);color:#062016;border-color:var(--green);font-weight:850}.page{display:none;padding:15px 0 38px}.page.active{display:block}.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:10px 0 16px}.section-head h2{margin:0;font-size:25px}.pill{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:4px 9px;font-size:11px;color:var(--muted)}.pill.demo{border-color:#80672d;color:#ffe5a2;background:#302812}.field{display:grid;gap:6px;margin:12px 0}.field label{font-size:13px;color:var(--muted);font-weight:700}.field input,.field select{width:100%;background:#071a14;border:1px solid #416653;border-radius:10px;padding:12px;color:var(--text);min-width:0}.field input:focus,.field select:focus{outline:2px solid var(--green);outline-offset:1px}.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 12px}.statrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.stat{background:#0b2119;border:1px solid var(--line);border-radius:13px;padding:14px}.stat .label{font-size:12px;color:var(--muted)}.stat .number{font-size:24px;font-weight:900;color:var(--gold);margin-top:4px}.task{display:flex;align-items:flex-start;gap:13px}.task .iconbox{width:45px;height:45px;border-radius:13px;background:#214a36;display:grid;place-items:center;font-size:22px;flex-shrink:0}.task .content{flex:1;min-width:0}.task .content p{margin:5px 0;color:var(--muted);font-size:13px}.task .reward{color:var(--gold);font-weight:900;white-space:nowrap}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;min-width:460px}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid var(--line)}th{color:var(--muted);font-weight:700}.status{display:inline-block;border-radius:999px;padding:4px 8px;background:#203b2d;color:#bfffdc;font-size:11px}.status.pending{background:#3d3218;color:#ffe3a0}.status.rejected{background:#472121;color:#ffc5c5}.hidden{display:none!important}.empty{border:1px dashed #456653;border-radius:12px;padding:22px;text-align:center;color:var(--muted)}.filebox{border:1px dashed #51765f;padding:15px;border-radius:12px}.filebox input{max-width:100%}.preview{max-width:100%;max-height:210px;border-radius:10px;margin-top:10px}.toast{position:fixed;bottom:18px;left:50%;transform:translateX(-50%);z-index:10;background:#f3fff8;color:#062016;padding:11px 16px;border-radius:12px;box-shadow:0 10px 35px #0006;max-width:90%;font-weight:800;font-size:13px;display:none}.footer{border-top:1px solid var(--line);padding:24px 0 35px;color:var(--muted);font-size:12px}.footer strong{color:var(--gold)}.auth{max-width:600px;margin:22px auto}.auth .card{grid-column:1/-1}.inline-link{color:var(--green);text-decoration:underline}.admin-warning{color:#ffe5a2}.badge{font-size:10px;letter-spacing:.6px;font-weight:900;color:#ffe5a2;border:1px solid #80672d;border-radius:5px;padding:3px 6px}
+@media(max-width:700px){.card{grid-column:1/-1}.card.wide{grid-column:1/-1}.top{align-items:flex-start}.brand{font-size:16px}.top-actions .btn{padding:8px 10px;min-height:36px;font-size:12px}.hero{padding-top:30px}.statrow{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:1/-1}.form-grid{grid-template-columns:1fr}.section-head{align-items:flex-start;flex-direction:column}.task{flex-wrap:wrap}.task .content{min-width:150px}.task .reward{margin-left:58px}}
 </style>
 </head>
 <body>
-<header>
-  <a class="logo" href="#">💚 Earn with Shakeel</a>
-  <nav>
-    <a href="#guides">Earning Guides</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#checker">Website Checker</a>
-    <a href="#contact">WhatsApp</a>
-  </nav>
+<header class="top">
+  <a href="#" class="brand" onclick="showPage('dashboard');return false">💚 Earn with <span>Shakeel</span></a>
+  <div class="top-actions">
+    <span id="headerUser" class="small muted">Guest demo</span>
+    <button class="btn secondary" id="authButton" onclick="showPage('auth')">Login / Register</button>
+  </div>
 </header>
+<main class="wrap">
+  <section class="hero">
+    <div class="eyebrow">LEARN • EARN • STAY AWARE</div>
+    <h1>Your rewards,<br><span>your progress.</span></h1>
+    <p class="muted">A mobile-friendly preview of the Earn with Shakeel rewards concept.</p>
+    <div class="notice"><strong>DEMO ONLY:</strong> All balances, rewards, referrals, promo codes and approvals are simulated in this browser session. No real ads, payments, withdrawals, account verification or password storage. Refreshing the page resets the demo.</div>
+    <div class="actions">
+      <button class="btn" onclick="showPage('dashboard')">Open Dashboard</button>
+      <a class="btn secondary" href="https://whatsapp.com/channel/0029Vb8HNbi4SpkM6ygI9M0w" target="_blank" rel="noopener">Join WhatsApp Channel ↗</a>
+    </div>
+  </section>
 
-<main>
-<div class="hero">
-  <div class="tag">LEARN • EXPLORE • STAY AWARE</div>
-  <h1>Your Guide to <span>Online Earning</span></h1>
-  <p>Discover online earning methods, learn about platforms, explore task-based opportunities and understand the risks before investing your money.</p>
-  <div class="buttons">
-    <a class="btn" href="#guides">Explore Earning Guides</a>
-    <a class="btn secondary" href="https://whatsapp.com/channel/0029Vb8HNbi4SpkM6ygI9M0w" target="_blank" rel="noopener">Join WhatsApp Channel</a>
-  </div>
-</div>
+  <nav class="nav" aria-label="Main navigation">
+    <button class="active" data-page="dashboard" onclick="showPage('dashboard')">🏠 Dashboard</button>
+    <button data-page="auth" onclick="showPage('auth')">👤 Login / Register</button>
+    <button data-page="ads" onclick="showPage('ads')">▶️ Ad Tasks</button>
+    <button data-page="wallet" onclick="showPage('wallet')">💰 Wallet</button>
+    <button data-page="referrals" onclick="showPage('referrals')">🎁 Referrals</button>
+    <button data-page="promo" onclick="showPage('promo')">🏷️ Promo Code</button>
+    <button data-page="whatsapp" onclick="showPage('whatsapp')">📲 WhatsApp Task</button>
+    <button data-page="admin" onclick="showPage('admin')">🛠️ Admin Demo</button>
+  </nav>
 
-<section id="guides">
-  <h2 class="section-title">Explore Our Guides</h2>
-  <p class="sub">Learn the basics and make informed decisions. No earning is guaranteed.</p>
-  <div class="grid">
-    <article class="card">
-      <div class="icon">🆓</div>
-      <h3>Free Earning</h3>
-      <p>Explore free-to-join websites and apps. Always check their terms, privacy and withdrawal conditions.</p>
-    </article>
-    <article class="card">
-      <div class="icon">📝</div>
-      <h3>Task Earning</h3>
-      <p>Learn how online tasks work, what effort they require and how to spot misleading offers.</p>
-    </article>
-    <article class="card">
-      <div class="icon">💼</div>
-      <h3>Online Skills</h3>
-      <p>Discover useful skills such as writing, graphic design, video editing and website development.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🛡️</div>
-      <h3>Scam Awareness</h3>
-      <p>Learn warning signs such as guaranteed profits, pressure to deposit and unexplained withdrawal fees.</p>
-    </article>
-  </div>
-</section>
+  <section class="page active" id="page-dashboard">
+    <div class="section-head"><div><div class="eyebrow">OVERVIEW</div><h2>Dashboard</h2></div><span class="pill demo">TEST MODE</span></div>
+    <div class="statrow">
+      <div class="stat"><div class="label">Test wallet</div><div class="number" id="dashBalance">Rs. 0</div></div>
+      <div class="stat"><div class="label">Demo ads completed</div><div class="number" id="dashAds">0</div></div>
+      <div class="stat"><div class="label">Referral bonus</div><div class="number" id="dashRef">Rs. 0</div></div>
+    </div>
+    <div class="grid" style="margin-top:14px">
+      <article class="card wide"><div class="icon">🚀</div><h3>Start exploring</h3><p class="muted">Try sample tasks, test a promo code, and preview a withdrawal request. Every amount is test-only and has no cash value.</p><div class="actions"><button class="btn" onclick="showPage('ads')">Try demo ad task</button><button class="btn secondary" onclick="showPage('wallet')">Open test wallet</button></div></article>
+      <article class="card"><div class="icon">📢</div><h3>Stay connected</h3><p class="muted">Visit the official Earn with Shakeel WhatsApp channel for guides and platform updates.</p><a class="btn" href="https://whatsapp.com/channel/0029Vb8HNbi4SpkM6ygI9M0w" target="_blank" rel="noopener">Join channel ↗</a></article>
+    </div>
+  </section>
 
-<section id="reviews">
-  <h2 class="section-title">Platform Reviews</h2>
-  <p class="sub">Research a platform carefully before sharing personal information or spending money.</p>
-  <div class="grid">
-    <article class="card">
-      <div class="icon">🔎</div>
-      <h3>Platform Information</h3>
-      <p>Check the official website, company details, terms of service and available independent reviews.</p>
-    </article>
-    <article class="card">
-      <div class="icon">💳</div>
-      <h3>Withdrawal Details</h3>
-      <p>Read minimum withdrawal limits, payment methods, processing times and any applicable fees.</p>
-    </article>
-    <article class="card">
-      <div class="icon">⚠️</div>
-      <h3>Investment Risks</h3>
-      <p>Deposits can be lost. Never invest money you cannot afford to lose, and do not trust guaranteed-return claims.</p>
-    </article>
-  </div>
-</section>
+  <section class="page" id="page-auth">
+    <div class="section-head"><div><div class="eyebrow">PREVIEW ACCOUNT</div><h2>Login / Register</h2></div><span class="pill demo">NO REAL ACCOUNT</span></div>
+    <div class="auth grid">
+      <article class="card">
+        <h3>Create demo profile</h3>
+        <p class="muted small">This form does not create an actual account. Do not enter your real password or sensitive details.</p>
+        <form id="registerForm">
+          <div class="field"><label for="regName">Display name</label><input id="regName" maxlength="32" placeholder="e.g. Demo User" required></div>
+          <div class="field"><label for="regPhone">Phone number (sample only)</label><input id="regPhone" inputmode="tel" placeholder="e.g. 03xx-xxxxxxx" required></div>
+          <div class="field"><label for="regPass">Demo password field (not saved)</label><input id="regPass" type="password" minlength="4" placeholder="Type any sample text" required autocomplete="new-password"></div>
+          <div class="field"><label for="regRef">Referral code (optional)</label><input id="regRef" placeholder="e.g. SHAKEEL123"></div>
+          <button class="btn" type="submit">Create demo profile</button>
+        </form>
+        <p class="small muted">Password is only checked as a form field and immediately discarded. It is never saved or transmitted.</p>
+      </article>
+      <article class="card">
+        <h3>Login preview</h3>
+        <p class="muted small">Use a display name to enter this local demo. No password is needed or checked.</p>
+        <form id="loginForm">
+          <div class="field"><label for="loginName">Display name</label><input id="loginName" placeholder="Your demo name" required maxlength="32"></div>
+          <button class="btn secondary" type="submit">Enter demo</button>
+        </form>
+        <div class="notice">Real login requires a secure backend and authentication provider. This GitHub Pages demo cannot authenticate users.</div>
+      </article>
+    </div>
+  </section>
 
- 
-<section id="platforms">
-  <h2 class="section-title">Latest Online Work Platforms</h2>
-  <p class="sub">Explore opportunities, check official terms and research carefully before joining.</p>
+  <section class="page" id="page-ads">
+    <div class="section-head"><div><div class="eyebrow">SAMPLE TASKS</div><h2>Ad Watching Tasks</h2></div><span class="pill demo">SIMULATED REWARDS</span></div>
+    <div class="grid">
+      <article class="card wide"><div class="task"><div class="iconbox">▶️</div><div class="content"><h3>Sample ad task #1</h3><p>This is a timed demo only, not a real advertisement. Tap start, wait 5 seconds, then claim a simulated Rs. 1 test reward.</p><span class="pill">5-second demo</span></div><div class="reward">+Rs. 1*</div></div><div class="actions"><button class="btn" id="ad1Btn" onclick="startAd(1)">Start demo task</button><span id="ad1Status" class="muted small" aria-live="polite"></span></div></article>
+      <article class="card wide"><div class="task"><div class="iconbox">📺</div><div class="content"><h3>Sample ad task #2</h3><p>Another example task to preview the interface. No advertiser is paying for this task.</p><span class="pill">5-second demo</span></div><div class="reward">+Rs. 1*</div></div><div class="actions"><button class="btn" id="ad2Btn" onclick="startAd(2)">Start demo task</button><span id="ad2Status" class="muted small" aria-live="polite"></span></div></article>
+      <article class="card full"><p class="small muted">*Test value only. Real ad-reward programs must use an ad provider that explicitly permits incentivized views. Never click ads or simulate views to manipulate advertiser metrics.</p></article>
+    </div>
+  </section>
 
-  <div class="grid">
-    <article class="card">
-      <div class="icon">🎨</div>
-      <h3>Fiverr</h3>
-      <p>Explore freelance services such as graphic design, writing and video editing. Work depends on your skills and getting clients.</p>
-      <p><strong>Cost:</strong> Check seller fees and current terms.</p>
-      <a class="btn" href="https://www.fiverr.com/" target="_blank" rel="noopener">Official Website ↗</a>
-    </article>
+  <section class="page" id="page-wallet">
+    <div class="section-head"><div><div class="eyebrow">TEST BALANCE</div><h2>Wallet & Withdrawal</h2></div><span class="pill demo">NO CASH VALUE</span></div>
+    <div class="grid">
+      <article class="card"><div class="icon">💰</div><p class="muted">Current demo balance</p><div class="metric" id="walletBalance">Rs. 0</div><p class="small muted">Sample balance only; no funds are held.</p></article>
+      <article class="card wide"><h3>Withdrawal request preview</h3><p class="muted">Minimum requested amount: Rs. 200. This form only demonstrates validation and does not send money or submit a real request.</p>
+        <form id="withdrawForm">
+          <div class="field"><label for="withdrawAmount">Amount (PKR)</label><input id="withdrawAmount" type="number" min="200" step="1" value="200" required></div>
+          <div class="field"><label for="withdrawMethod">Sample method</label><select id="withdrawMethod"><option>JazzCash (demo only)</option><option>Easypaisa (demo only)</option><option>Other (demo only)</option></select></div>
+          <button class="btn gold" type="submit">Preview withdrawal request</button>
+        </form><p id="withdrawResult" class="small muted" aria-live="polite"></p>
+      </article>
+      <article class="card full"><h3>Wallet activity</h3><div class="tablewrap"><table><thead><tr><th>Activity</th><th>Amount</th><th>Status</th></tr></thead><tbody id="walletRows"><tr><td colspan="3" class="muted">No demo activity yet.</td></tr></tbody></table></div></article>
+    </div>
+  </section>
 
-    <article class="card">
-      <div class="icon">💻</div>
-      <h3>Upwork</h3>
-      <p>A freelance marketplace where eligible users can find client projects and submit proposals. Some proposals or services may involve fees.</p>
-      <p><strong>Cost:</strong> Review fees before applying.</p>
-      <a class="btn" href="https://www.upwork.com/" target="_blank" rel="noopener">Official Website ↗</a>
-    </article>
+  <section class="page" id="page-referrals">
+    <div class="section-head"><div><div class="eyebrow">INVITE PREVIEW</div><h2>Referral Program</h2></div><span class="pill demo">SIMULATED</span></div>
+    <div class="grid">
+      <article class="card wide"><div class="icon">🎁</div><h3>Invite friends</h3><p class="muted">Example referral bonus: Rs. 2 per eligible referral. This demo cannot verify new users, track referrals on a server or pay a bonus.</p><div class="field"><label>Your sample referral link</label><input id="refLink" readonly value="https://islamicqueen655-create.github.io/shakeel-earning/?ref=DEMO123"></div><div class="actions"><button class="btn" onclick="copyReferral()">Copy referral link</button><button class="btn secondary" onclick="simulateReferral()">Simulate test referral (+Rs. 2)</button></div></article>
+      <article class="card"><h3>Referral summary</h3><div class="metric" id="refCount">0</div><p class="muted">Simulated eligible referrals</p><div class="metric" id="refBonus">Rs. 0</div><p class="muted">Test bonus total</p></article>
+      <article class="card full"><p class="small muted">Real referral bonuses need server-side tracking, anti-fraud checks and a funded reward budget. Do not promise cash rewards before funding is secured.</p></article>
+    </div>
+  </section>
 
-    <article class="card">
-      <div class="icon">🛡️</div>
-      <h3>Before You Join</h3>
-      <p>Read the platform's age requirements, payment terms, fees and privacy policy. Never pay someone who promises guaranteed work or profit.</p>
-    </article>
-  </div>
-</section>
-  <section id="checker">
-  <div class="checker">
-    <div class="tag">COMING SOON</div>
-    <h2 class="section-title">🌐 Website Information Checker</h2>
-    <p class="sub">In the future, this tool is planned to help visitors research website information, such as domain registration details where publicly available.</p>
-    <input type="url" placeholder="Example: https://example.com" disabled>
-    <br>
-    <button class="btn" disabled style="opacity:.65;border:0">Coming Soon</button>
-    <p class="notice">This checker is not active yet. No website is being checked by this form.</p>
-  </div>
-</section>
+  <section class="page" id="page-promo">
+    <div class="section-head"><div><div class="eyebrow">PROMOTIONAL CODE</div><h2>Redeem Promo Code</h2></div><span class="pill demo">TEST ONLY</span></div>
+    <div class="grid">
+      <article class="card wide"><div class="icon">🏷️</div><h3>Have a promo code?</h3><p class="muted">Try the sample code <strong>SHAKEEL5</strong> to add a one-time Rs. 5 test reward to this session.</p><form id="promoForm"><div class="field"><label for="promoInput">Promo code</label><input id="promoInput" placeholder="Enter code" maxlength="24" required></div><button class="btn" type="submit">Redeem test code</button></form><p id="promoResult" class="small muted" aria-live="polite"></p></article>
+      <article class="card"><div class="icon">✨</div><h3>Available sample code</h3><div class="metric">SHAKEEL5</div><p class="muted">One redemption per page session.</p><button class="btn secondary" onclick="document.getElementById('promoInput').value='SHAKEEL5';showPage('promo')">Use sample code</button></article>
+    </div>
+  </section>
 
-<section id="contact">
-  <div class="whatsapp">
-    <div class="icon">📲</div>
-    <h2>Join Earn with Shakeel</h2>
-    <p>Follow our WhatsApp channel for online earning guides, platform updates and scam-awareness information.</p>
-    <a class="btn" href="https://whatsapp.com/channel/0029Vb8HNbi4SpkM6ygI9M0w" target="_blank" rel="noopener">Join WhatsApp Channel ↗</a>
-  </div>
-</section>
+  <section class="page" id="page-whatsapp">
+    <div class="section-head"><div><div class="eyebrow">CHANNEL TASK</div><h2>WhatsApp Channel Join</h2></div><span class="pill demo">MANUAL DEMO REVIEW</span></div>
+    <div class="grid">
+      <article class="card wide"><div class="icon">📲</div><h3>Join Earn with Shakeel</h3><p class="muted">Open the channel, then you can choose a screenshot file to preview the submission form. In this demo the file stays on your device/browser and is not uploaded anywhere.</p><a class="btn" href="https://whatsapp.com/channel/0029Vb8HNbi4SpkM6ygI9M0w" target="_blank" rel="noopener">Open WhatsApp channel ↗</a>
+        <form id="whatsappForm" style="margin-top:15px"><div class="field"><label for="shotFile">Choose screenshot (demo preview only)</label><div class="filebox"><input id="shotFile" type="file" accept="image/*"><img id="shotPreview" class="preview hidden" alt="Screenshot preview"></div></div><div class="field"><label for="shotNote">Optional note</label><input id="shotNote" maxlength="140" placeholder="Short note for admin demo"></div><button class="btn gold" type="submit">Submit demo for review</button></form><p id="shotResult" class="small muted" aria-live="polite"></p></article>
+      <article class="card"><h3>Submission status</h3><div id="shotStatus" class="empty">No demo submission yet.</div><p class="small muted">A screenshot alone cannot reliably prove channel membership. A real system needs a privacy-respecting verification method and admin review.</p></article>
+    </div>
+  </section>
+
+  <section class="page" id="page-admin">
+    <div class="section-head"><div><div class="eyebrow">PREVIEW PANEL</div><h2>Admin Review Demo</h2></div><span class="badge">NOT SECURE / NOT LIVE</span></div>
+    <div class="notice admin-warning">This is a public demo screen, not a protected admin panel. Do not use it for real user submissions, private screenshots, payouts or personal data. Anyone who opens this static page can access this screen.</div>
+    <div class="grid">
+      <article class="card full"><h3>WhatsApp task submissions</h3><p class="muted small">The current browser session's sample submission appears here. Approve/reject only changes the local demo display.</p><div id="adminSubmission" class="empty">No submission to review yet.</div><div class="actions"><button class="btn" onclick="reviewSubmission('Approved in demo')">Approve demo</button><button class="btn danger" onclick="reviewSubmission('Rejected in demo')">Reject demo</button></div></article>
+      <article class="card full"><h3>Withdrawal requests</h3><div id="adminWithdrawals" class="empty">No demo withdrawal request yet.</div></article>
+    </div>
+  </section>
 </main>
-
-<footer>
-  <p><strong>Earn with Shakeel</strong> — Learn before you earn.</p>
-  <p>Disclaimer: This website provides educational information only and is not financial advice. Platforms are not guaranteed to be safe or profitable. Do your own research. Never share passwords, OTPs or sensitive account details.</p>
-  <p>© 2026 Earn with Shakeel</p>
-</footer>
-</body>
-  </html>
-  
+<footer class="wrap footer">
+  <p><strong>Earn with Shakeel</strong> · Learn before you earn.</p>
+  <p>This is a front-end demonstration only. No real accounts, password storage, advertising, server, referral tracking, file upload, financial transactions or payments are provided. Do not enter real passwords, OTPs, banking deta
